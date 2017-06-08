@@ -1,0 +1,38 @@
+#process {
+  background-color: $colorBlack;
+  h2{
+    color: $colorMain;
+  }
+  .content {
+    line-height: 1.25em;
+  }
+  %icon{
+    font-family: 'icomoon';
+    color: $colorMain;
+    font-size: 2em;
+  }
+  .analyse:before{
+    @extend %icon;
+    content: "\e90e";
+  }
+  .preparing:before{
+    @extend %icon;
+    content: "\e914";
+  }
+  .work:before{
+    @extend %icon;
+    content: "\e90d";
+  }
+  .finalyse:before {
+    @extend %icon;
+    content: "\e90c";
+  }
+  .testing:before{
+    @extend %icon;
+    content: "\e913";
+  }
+  .deliver:before{
+    @extend %icon;
+    content: "\e90b";
+  }
+}

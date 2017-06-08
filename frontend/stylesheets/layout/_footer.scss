@@ -1,0 +1,15 @@
+footer {
+  background: $colorDark;
+  %social_icon {
+    font-family: 'icomoon';
+    color: $colorWhite;
+  }
+  .fb:before {
+    @extend %social_icon;
+    content: "\e903";
+  }
+  .tw:before {
+    @extend %social_icon;
+    content: "\e901";
+  }
+}

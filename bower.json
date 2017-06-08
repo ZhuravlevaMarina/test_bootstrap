@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "description": "<h1>Hi this is test repository</h1>",
+  "main": "index.js",
+  "authors": [
+    "ZhuravlevaMarina <marinajuravleva28gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ZhuravlevaMarina/test_bootstrap",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "requirejs": "^2.3.2",
+    "domReady": "^2.0.1",
+    "swiper": "^3.4.1",
+    "bootstrap": "^3.3.7"
+  }
+}

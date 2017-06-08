@@ -1,0 +1,21 @@
+%icon{
+  font-family: 'icomoon';
+  color: $colorMain;
+  font-size: 2em;
+}
+.webdesign:before{
+  @extend %icon;
+  content: "\e912";
+}
+.graphdesign:before{
+  @extend %icon;
+  content: "\e911";
+}
+.photography:before{
+  @extend %icon;
+  content: "\e910";
+}
+.developing:before{
+  @extend %icon;
+  content: "\e90f";
+}

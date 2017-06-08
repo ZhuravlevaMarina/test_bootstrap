@@ -1,0 +1,30 @@
+h2{
+  font-family: $fontBold;
+  font-size: 1.875em;
+}
+h3{
+  font-family: $fontRegular;
+  font-size: 1em;
+}
+.line_yellow{
+  background: url(/public/images/line_yellow.png) repeat-x;
+  width: 170px;
+  height: 3px;
+  margin: 24px auto;
+}
+.headline{
+  font-family: $fontBold;
+  font-size: 1.25em;
+}
+.content{
+  font-family: $fontLight;
+  font-size: 1em;
+  line-height: 1.5625em;
+}
+.caption{
+  font-family: $fontLight;
+  font-size: 1em;
+}
+.white{
+  color: $colorWhite;
+}

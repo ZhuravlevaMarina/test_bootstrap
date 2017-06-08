@@ -1,0 +1,17 @@
+%icon{
+  font-family: 'icomoon';
+  color: $colorMain;
+  font-size: 2em;
+}
+.address:before{
+  @extend %icon;
+  content: "\e906";
+}
+.mail:before{
+  @extend %icon;
+  content: "\e905";
+}
+.phone:before{
+  @extend %icon;
+  content: "\e904";
+}

@@ -1,0 +1,28 @@
+#team{
+  background-color: $colorGrey;
+  .name{
+    color: $colorMain;
+    font-family: $fontRegular;
+    font-size: 1.25em;
+  }
+  .personal-box{
+    background-color: $colorBlack;
+    color: $colorWhite;
+    %social_icon{
+      font-family: 'icomoon';
+      color: $colorWhite;
+    }
+    .fb:before{
+      @extend %social_icon;
+      content: "\e903";
+      border: 1px solid $colorWhite;
+      padding: 5px;
+    }
+    .tw:before{
+      @extend %social_icon;
+      content: "\e901";
+      border: 1px solid $colorWhite;
+      padding: 5px;
+    }
+  }
+}

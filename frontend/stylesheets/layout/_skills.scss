@@ -1,0 +1,15 @@
+.skills{
+  background-color: $colorDarkGrey;
+  .thumbnail {
+  background: none;
+    border: none;
+    img {
+      max-width: 144px;
+    }
+    .caption{
+      color: $colorMain;
+      font-family: $fontRegular;
+      font-size: 1.25em;
+    }
+  }
+}
