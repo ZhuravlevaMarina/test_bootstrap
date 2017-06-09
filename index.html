@@ -10,55 +10,56 @@
 </head>
 <body>
     <div class="wrapper">
-        <section class="first_block">
-            <img src="public/images/bg_header.png" id="bg">
-                <header class="header">
-                    <div class="header-nav">
-                        <div class="row">
-                            <div class="col-xs-6 col-md-4">
-                                <div class="logo">
-                                    <a href="#" class="logo">
-                                        <img src="public/images/logo.png" alt="logo">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-xs-6 col-md-8">
-                                <nav class="header-nav">
-                                    <div class="dropdown hidden-sm hidden-md hidden-lg">
-                                        <button class="btn btn-info dropdown-toggle" id="dropdownMenu1"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                            <li><a href="#" class="dropdown-menu-item">HOME</a></li>
-                                            <li><a href="#" class="dropdown-menu-item">SERVICES</a></li>
-                                            <li><a href="#" class="dropdown-menu-item">WORK</a></li>
-                                            <li><a href="#" class="dropdown-menu-item">ABOUT</a></li>
-                                            <li><a href="#" class="dropdown-menu-item">CLIENTS</a></li>
-                                            <li><a href="#" class="dropdown-menu-item">CONTACT</a></li>
-                                            <li role="separator" class="divider"></li>
-                                        </ul>
-                                    </div>
-                                    <ul class="nav nav-pills hidden-xs visible-sm-inline visible-md-inline visible-lg-inline">
-                                        <li><a href="#" class="active dropdown-menu-item">HOME</a></li>
-                                        <li><a href="#" class="dropdown-menu-item">SERVICES</a></li>
-                                        <li><a href="#" class="dropdown-menu-item">WORK</a></li>
-                                        <li><a href="#" class="dropdown-menu-item">ABOUT</a></li>
-                                        <li><a href="#" class="dropdown-menu-item">CLIENTS</a></li>
-                                        <li><a href="#" class="dropdown-menu-item">CONTACT</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
+        <header class="header">
+            <div class="header-nav">
+                <div class="row">
+                    <div class="col-xs-4 col-md-4">
+                        <div class="logo">
+                            <a href="#" class="logo">
+                                <img src="public/images/logo.png" alt="logo">
+                            </a>
                         </div>
                     </div>
-                </header>
-                <div class="tag">
-                    <div class="tag-block text-center">
-                        <h1>BRANDING HAVE ANOTHER
-                            DEFINITION</h1>
-                        <a href="#" class="btn btn-1 active">Learn more</a>
+                    <div class="col-xs-8 col-md-8">
+                        <nav class="header-nav">
+                            <div class="dropdown hidden-sm hidden-md hidden-lg">
+                                <button class="btn btn-info dropdown-toggle" id="dropdownMenu1"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#" class="dropdown-menu-item">HOME</a></li>
+                                    <li><a href="#services" class="dropdown-menu-item">SERVICES</a></li>
+                                    <li><a href="#works" class="dropdown-menu-item">WORK</a></li>
+                                    <li><a href="#about" class="dropdown-menu-item">ABOUT</a></li>
+                                    <li><a href="#clients" class="dropdown-menu-item">CLIENTS</a></li>
+                                    <li><a href="#contact" class="dropdown-menu-item">CONTACT</a></li>
+                                    <li role="separator" class="divider"></li>
+                                </ul>
+                            </div>
+                            <ul class="nav nav-pills hidden-xs visible-sm-inline visible-md-inline visible-lg-inline">
+                                <li><a href="#" class="active dropdown-menu-item">HOME</a></li>
+                                <li><a href="#services" class="dropdown-menu-item">SERVICES</a></li>
+                                <li><a href="#works" class="dropdown-menu-item">WORK</a></li>
+                                <li><a href="#about" class="dropdown-menu-item">ABOUT</a></li>
+                                <li><a href="#clients" class="dropdown-menu-item">CLIENTS</a></li>
+                                <li><a href="#contact" class="dropdown-menu-item">CONTACT</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
+            </div>
+        </header>
+        <section id="top-block">
+            <img src="public/images/bg_header.png" class="bg">
+            <div class="top-info">
+                <div class="text-block">
+                    <div class="heading text-center">
+                        <h1>BRANDING HAVE ANOTHER DEFINITION</h1>
+                        <button type="submit" class="btn btn-default">Learn more</button>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="services">
             <div class="container">
@@ -73,7 +74,6 @@
                         nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis a pellen
                         tesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt ni dictum porta.
                 </p>
-                <div class="container">
                     <div class="row">
                         <div class="col-sm-6 col-md-6 col-lg-3">
                             <div class="webdesign"></div>
@@ -102,7 +102,6 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
 
         <section id="process">
@@ -113,53 +112,36 @@
                         suscipit tortor eget felis porttitor volutpat.
                     </p>
                         <div class="row">
-                            <div class="col-sm-4 col-md-2 col-lg-2 block-next">
+                            <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 block-next">
                                 <div class="analyse"></div>
                                 <div class="headline text-uppercase">ANALYSE</div>
-                                <div class="content">Vivamus suscipit tortor eget
-                                    felis porttitor volutpat. Cura
-                                    bitur aliquet quam.
-                                </div>
+                                <div class="content">Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam.</div>
                             </div>
-                            <div class="col-sm-4 col-md-2 col-lg-2 block-next">
+                            <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 block-next">
                                 <div class="preparing"></div>
                                 <div class="headline text-uppercase">PREPARING</div>
-                                <div class="content">Vivamus suscipit tortor eget
-                                    felis porttitor volutpat. Cura
-                                    bitur aliquet quam id dui posu
-                                    ere blandit
-                                </div>
+                                <div class="content">Vivamus suscipit tortor eget felis porttitor volutpat. Cura bitur aliquet quam id dui posuere blandit</div>
                             </div>
-                            <div class="col-sm-4 col-md-2 col-lg-2 block-next">
+                            <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 block-next">
                                 <div class="work"></div>
                                 <div class="headline text-uppercase">WORKING</div>
-                                <div class="content">Vivamus suscipit tortor eget
-                                    felis porttitor volutpat.
-                                </div>
+                                <div class="content">Vivamus suscipit tortor eget felis porttitor volutpat.</div>
                             </div>
-                            <div class="col-sm-4 col-md-2 col-lg-2 block-next">
+                            <div class="clearfix visible-sm-block"></div>
+                            <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 block-next">
                                 <div class="finalyse"></div>
                                 <div class="headline text-uppercase">FINALYSE</div>
-                                <div class="content">Vivamus suscipit tortor eget
-                                    felis porttitor volutpat. Cura
-                                    bitur aliquet quam id.</div>
+                                <div class="content">Vivamus suscipit tortor egetfelis porttitor volutpat. Curabitur aliquet quam id.</div>
                             </div>
-                            <div class="col-sm-4 col-md-2 col-lg-2 block-next">
+                            <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 block-next">
                                 <div class="testing"></div>
                                 <div class="headline text-uppercase">TESTING</div>
-                                <div class="content">Vivamus suscipit tortor eget
-                                    felis porttitor volutpat. Cura
-                                    bitur aliquet quam id dui posu
-                                    ere blandit
-                                </div>
+                                <div class="content">Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit</div>
                             </div>
-                            <div class="col-sm-4 col-md-2 col-lg-2 block-next">
+                            <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 block-next">
                                 <div class="deliver"></div>
                                 <div class="headline text-uppercase">DELIVER</div>
-                                <div class="content">Vivamus suscipit tortor eget
-                                    felis porttitor volutpat. Cur
-                                    est bitur.
-                                </div>
+                                <div class="content">Vivamus suscipit tortor eget felis porttitor volutpat. Cur est bitur.</div>
                             </div>
                         </div>
                 </div>
@@ -177,22 +159,20 @@
                         tempus convallis quis ac lectus. Praesent sapien massa, convallis a pellen
                         tesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt ni dictum porta.
                     </p>
-                    <ul class="nav nav-pills portfolio">
-                        <li role="presentation" id="all" class="active portfolio-item">All</li>
-                        <li role="presentation" id="webdesign" class="portfolio-item">WEB DESIGN</li>
-                        <li role="presentation" id="grdesign" class="portfolio-item">GRAPHIC DESIGN</li>
-                        <li role="presentation" id="photography" class="portfolio-item">PHOTOGRAPHY</li>
-                        <li role="presentation" id="illustration" class="portfolio-item">ILLUSTRATION</li>
+                    <ul class="nav nav-tabs portfolio">
+                        <li class="active portfolio-item"><a data-toggle="tab" href="#all">All</a></li>
+                        <li class="portfolio-item"><a data-toggle="tab" href="#webdesign">WEB DESIGN</a></li>
+                        <li class="portfolio-item"><a data-toggle="tab" href="#grdesign">GRAPHIC DESIGN</a></li>
+                        <li class="portfolio-item"><a data-toggle="tab" href="#photography">PHOTOGRAPHY</a></li>
+                        <li class="portfolio-item"><a data-toggle="tab" href="#illustration">ILLUSTRATION</a></li>
                     </ul>
-                    <div class="box all">
-                        <ul class="media-list">
-                            <li class="media">
-                                <div class="media-left">
-                                    <a href="#">
-                                        <img class="media-object" src="public/images/pictureWork.png" alt="">
-                                    </a>
+                    <div class="tab-content">
+                        <div id="all" class="tab-pane fade in active">
+                            <div class="row works-block">
+                                <div class="works-image col-md-8 col-lg-8">
+                                    <img class="media-object" src="public/images/pictureWork.png" alt="">
                                 </div>
-                                <div class="media-body  media-middle text-left">
+                                <div class="col-md-4 col-lg-4 works-text text-left">
                                     <h4>Our Awesome Image</h4>
                                     <p class="caption">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
                                         Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur
@@ -202,54 +182,200 @@
                                         massa, convallis a pellentesque nec, egestas non nisi. Mauris blan
                                         dit aliquet elit, eget tincidunt ni dictum porta.
                                     </p>
-                                    <p><a class="btn btn-default" href="#" role="button">View Live</a></p>
+                                    <button type="submit" class="btn btn-default">View Live</button>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
+                        <div id="webdesign" class="tab-pane fade">
+                            <div class="row works-block">
+                                <div class="works-image col-md-8 col-lg-8">
+                                    <img class="media-object" src="public/images/pictureWork.png" alt="">
+                                </div>
+                                <div class="col-md-4 col-lg-4 works-text text-left">
+                                    <h4>Our Awesome Image</h4>
+                                    <p class="caption">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+                                        Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur
+                                        aliquet quam id dui posuere blandit. Nulla porttitor accumsan tinci
+                                        dunt. Cras ultricies ligula sed magna dictum porta. Curabitur non
+                                        nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien
+                                        massa, convallis a pellentesque nec, egestas non nisi. Mauris blan
+                                        dit aliquet elit, eget tincidunt ni dictum porta.
+                                    </p>
+                                    <button type="submit" class="btn btn-default">View Live</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="grdesign" class="tab-pane fade">
+                            <div class="row works-block">
+                                <div class="works-image col-md-8 col-lg-8">
+                                    <img class="media-object" src="public/images/pictureWork.png" alt="">
+                                </div>
+                                <div class="col-md-4 col-lg-4 works-text text-left">
+                                    <h4>Our Awesome Image</h4>
+                                    <p class="caption">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+                                        Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur
+                                        aliquet quam id dui posuere blandit. Nulla porttitor accumsan tinci
+                                        dunt. Cras ultricies ligula sed magna dictum porta. Curabitur non
+                                        nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien
+                                        massa, convallis a pellentesque nec, egestas non nisi. Mauris blan
+                                        dit aliquet elit, eget tincidunt ni dictum porta.
+                                    </p>
+                                    <button type="submit" class="btn btn-default">View Live</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="photography" class="tab-pane fade">
+                            <div class="row works-block">
+                                <div class="works-image col-md-8 col-lg-8">
+                                    <img class="media-object" src="public/images/pictureWork.png" alt="">
+                                </div>
+                                <div class="col-md-4 col-lg-4 works-text text-left">
+                                    <h4>Our Awesome Image</h4>
+                                    <p class="caption">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+                                        Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur
+                                        aliquet quam id dui posuere blandit. Nulla porttitor accumsan tinci
+                                        dunt. Cras ultricies ligula sed magna dictum porta. Curabitur non
+                                        nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien
+                                        massa, convallis a pellentesque nec, egestas non nisi. Mauris blan
+                                        dit aliquet elit, eget tincidunt ni dictum porta.
+                                    </p>
+                                    <button type="submit" class="btn btn-default">View Live</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="illustration" class="tab-pane fade">
+                            <div class="row works-block">
+                                <div class="works-image col-md-8 col-lg-8">
+                                    <img class="media-object" src="public/images/pictureWork.png" alt="">
+                                </div>
+                                <div class="col-md-4 col-lg-4 works-text text-left">
+                                    <h4>Our Awesome Image</h4>
+                                    <p class="caption">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+                                        Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur
+                                        aliquet quam id dui posuere blandit. Nulla porttitor accumsan tinci
+                                        dunt. Cras ultricies ligula sed magna dictum porta. Curabitur non
+                                        nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien
+                                        massa, convallis a pellentesque nec, egestas non nisi. Mauris blan
+                                        dit aliquet elit, eget tincidunt ni dictum porta.
+                                    </p>
+                                    <button type="submit" class="btn btn-default">View Live</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="portfolio">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4 col-lg-2">
+                <div class="row text-center">
+                    <div class="image-container">
                         <img src="public/images/img1.png" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Sample Image</h3>
+                                <p>Graphic Design</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-lg-2">
+                    <div class="image-container">
                         <img src="public/images/img2.png" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Sample Image</h3>
+                                <p>Graphic Design</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-lg-2">
+                    <div class="image-container">
                         <img src="public/images/img3.png" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Sample Image</h3>
+                                <p>Graphic Design</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-lg-2">
+                    <div class="image-container">
                         <img src="public/images/img4.png" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Sample Image</h3>
+                                <p>Graphic Design</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-lg-2">
+                    <div class="image-container">
                         <img src="public/images/img5.png" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Sample Image</h3>
+                                <p>Graphic Design</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-lg-2">
+                    <div class="image-container">
                         <img src="public/images/img6.png" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Sample Image</h3>
+                                <p>Graphic Design</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-lg-2">
+                    <div class="image-container">
                         <img src="public/images/img7.png" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Sample Image</h3>
+                                <p>Graphic Design</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-lg-2">
+                    <div class="image-container">
                         <img src="public/images/img8.png" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Sample Image</h3>
+                                <p>Graphic Design</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-lg-2">
+                    <div class="image-container">
                         <img src="public/images/img9.png" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Sample Image</h3>
+                                <p>Graphic Design</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-lg-2">
+                    <div class="image-container">
                         <img src="public/images/img10.png" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Sample Image</h3>
+                                <p>Graphic Design</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-lg-2">
+                    <div class="image-container">
                         <img src="public/images/img11.png" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Sample Image</h3>
+                                <p>Graphic Design</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-lg-2">
+                    <div class="image-container">
                         <img src="public/images/img12.png" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Sample Image</h3>
+                                <p>Graphic Design</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -259,12 +385,12 @@
                     <p class="caption">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit
                         tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere.
                     </p>
-                    <a class="btn btn-default" href="#" role="button">CONTACT US</a>
+                    <button type="submit" class="btn btn-default">CONTACT US</button>
                 </div>
             </div>
         </section>
 
-        <section class="statistics">
+        <section id="statistics">
             <div class="container">
                 <div class="row text-center white">
                     <h2>WE ARE PROUD OF THESE NUMBERS</h2>
@@ -301,7 +427,7 @@
             </div>
         </section>
 
-        <section id="aboutUs">
+        <section id="about">
             <div class="container">
                 <div class="row text-center">
                     <h3>ABOUT US</h3>
@@ -425,7 +551,7 @@
             </div>
         </section>
 
-        <section class="skills text-center white">
+        <section id="skills" class="text-center white">
             <div class="container">
                 <h2>SKILLS</h2>
                 <p class="caption">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
@@ -460,7 +586,7 @@
             </div>
         </section>
 
-        <section id="ourClients">
+        <section id="clients">
             <div class="container">
                 <div class="row text-center">
                     <h3>OUR CLIENTS</h3>
@@ -474,24 +600,24 @@
                     </p>
                 </div>
                 <div class="row">
-                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-                            <img src="/public/images/logo1.png" alt="">
-                        </div>
-                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-                            <img src="/public/images/logo2.png" alt="">
-                        </div>
-                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-                            <img src="/public/images/logo3.png" alt="">
-                        </div>
-                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-                            <img src="/public/images/logo4.png" alt="">
-                        </div>
-                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-                            <img src="/public/images/logo5.png" alt="">
-                        </div>
-                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-                            <img src="/public/images/logo6.png" alt="">
-                        </div>
+                    <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                        <img src="/public/images/logo1.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                        <img src="/public/images/logo2.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                        <img src="/public/images/logo3.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                        <img src="/public/images/logo4.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                        <img src="/public/images/logo5.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                        <img src="/public/images/logo6.png" alt="">
+                    </div>
                 </div>
             </div>
                 <div id="carousel-generic" class="carousel slide text-center" data-ride="carousel">
@@ -509,13 +635,46 @@
                                     <div class="person">Daniel J. Boorstin</div>
                                 </div>
                             </div>
+                            <div class="item">
+                                <div class="carousel-content">
+                                    <blockquote>
+                                        <p class="carousel-text">“An image is not simply a trademark, a design, a slogan or an easily
+                                            remembered picture. It is a studiously crafted personality profile of an
+                                            individual, institution,corporation, product or service”</p>
+                                    </blockquote>
+                                    <div class="line_yellow"></div>
+                                    <div class="person">Daniel J. Boorstin</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-content">
+                                    <blockquote>
+                                        <p class="carousel-text">“An image is not simply a trademark, a design, a slogan or an easily
+                                            remembered picture. It is a studiously crafted personality profile of an
+                                            individual, institution,corporation, product or service”</p>
+                                    </blockquote>
+                                    <div class="line_yellow"></div>
+                                    <div class="person">Daniel J. Boorstin</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-content">
+                                    <blockquote>
+                                        <p class="carousel-text">“An image is not simply a trademark, a design, a slogan or an easily
+                                            remembered picture. It is a studiously crafted personality profile of an
+                                            individual, institution,corporation, product or service”</p>
+                                    </blockquote>
+                                    <div class="line_yellow"></div>
+                                    <div class="person">Daniel J. Boorstin</div>
+                                </div>
+                            </div>
                         </div>
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-generic" data-slide-to="2"></li>
+                                <li data-target="#carousel-generic" data-slide-to="3"></li>
                             </ol>
                     </div>
                 </div>
@@ -552,41 +711,42 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
         </section>
 
         <section id="contact-form">
-            <div class="row text-center">
-                <h2>SEND US A MESSAGE</h2>
-                <p class="caption">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit
-                    tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere.
-                </p>
-            </div>
-            <form class="form">
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 form-group">
-                        <label class="sr-only" for="exampleInputName2"></label>
-                        <input type="email" class="form-control" id="exampleInputName2" placeholder="Your Name">
-                    </div>
-                    <div class="col-md-6 col-lg-4 form-group">
-                        <label class="sr-only" for="exampleInputEmail3"></label>
-                        <input type="password" class="form-control" id="exampleInputEmail3" placeholder="Your Mail">
-                    </div>
-                    <div class="col-md-6 col-lg-4 form-group">
-                        <label class="sr-only" for="exampleInputSubject"></label>
-                        <input type="password" class="form-control" id="exampleInputSubject" placeholder="Subject">
-                    </div>
+            <div class="container">
+                <div class="row text-center">
+                    <h2>SEND US A MESSAGE</h2>
+                    <p class="caption">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit
+                        tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere.
+                    </p>
                 </div>
-                <textarea class="form-control" rows="6" placeholder="Enter Message Here..."></textarea>
-
-
-
-                <button type="submit" class="btn btn-default">SEND MESSAGE</button>
-            </form>
+                <form class="form">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 form-group">
+                            <label class="sr-only" for="exampleInputName2"></label>
+                            <input type="email" class="form-control" id="exampleInputName2" placeholder="Your Name">
+                        </div>
+                        <div class="col-md-6 col-lg-4 form-group">
+                            <label class="sr-only" for="exampleInputEmail3"></label>
+                            <input type="password" class="form-control" id="exampleInputEmail3" placeholder="Your Mail">
+                        </div>
+                        <div class="col-md-6 col-lg-4 form-group">
+                            <label class="sr-only" for="exampleInputSubject"></label>
+                            <input type="password" class="form-control" id="exampleInputSubject" placeholder="Subject">
+                        </div>
+                    </div>
+                    <textarea class="form-control" rows="6" placeholder="Enter Message Here..."></textarea>
+                    <button type="submit" class="btn btn-default">SEND MESSAGE</button>
+                </form>
+            </div>
         </section>
         <footer>
-            <div class="text-center">
-                <div class="copyright">© Copyright 2013 <span class="yellowText">Smak</span>. All Rights Reserved.</div>
+            <div class="footer-box text-center">
+                <div class="copyright">
+                    <p>© Copyright 2013 <span class="yellowText">Smak</span>. All Rights Reserved.</p>
+                </div>
                 <div class="social-icons">
                     <a href="#" class="fb"></a>
                     <a href="#" class="dribble"></a>
@@ -594,24 +754,7 @@
                     <a href="#" class="google"></a>
                 </div>
             </div>
-
         </footer>
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
 </body>
 </html>

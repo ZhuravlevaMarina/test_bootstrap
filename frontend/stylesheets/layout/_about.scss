@@ -1,0 +1,56 @@
+%pictures{
+  font-family: 'icomoon';
+  font-size: 2em;
+  color: $colorWhite;
+  z-index: 1;
+  position: absolute;
+  top: 25%;
+  left: 28%;
+}
+.time {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: $colorMain;
+  border-radius: 50%;
+  &:before {
+    @extend %pictures;
+    content: "\e90a";
+  }
+}
+.support {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: $colorMain;
+  border-radius: 50%;
+  &:before {
+    @extend %pictures;
+    content: "\e908";
+  }
+}
+.experience {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: $colorMain;
+  border-radius: 50%;
+  &:before {
+    @extend %pictures;
+    content: "\e909";
+  }
+}
+.team {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: $colorMain;
+  border-radius: 50%;
+  &:before {
+    @extend %pictures;
+    content: "\e907";
+  }
+}
+.media{
+  margin-bottom: 60px;
+}

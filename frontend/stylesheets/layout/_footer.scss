@@ -1,27 +1,33 @@
 footer {
   background: $colorDark;
   color: $colorWhite;
-  .yellowText{
+  .footer-box {
+    padding: 25px 0 25px;
+  }
+  .yellowText {
     color: $colorMain;
   }
-  %social_icon {
-    font-family: 'icomoon';
-    color: $colorWhite;
-  }
-  .fb:before {
-    @extend %social_icon;
-    content: "\e903";
-  }
-  .dribble:before{
-    @extend %social_icon;
-    content: "\e902";
-  }
-  .tw:before {
-    @extend %social_icon;
-    content: "\e901";
-  }
-  .google:before{
-    @extend %social_icon;
-    content: "\e900";
+  .social-icons {
+    margin-top: 30px;
+    %social_icon {
+      font-family: 'icomoon';
+      color: $colorWhite;
+    }
+    .fb:before {
+      @extend %social_icon;
+      content: "\e903";
+    }
+    .dribble:before {
+      @extend %social_icon;
+      content: "\e902";
+    }
+    .tw:before {
+      @extend %social_icon;
+      content: "\e901";
+    }
+    .google:before {
+      @extend %social_icon;
+      content: "\e900";
+    }
   }
 }

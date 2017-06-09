@@ -1,0 +1,9 @@
+#contact-form{
+  background-color: $colorDarkGrey;
+  color: $colorWhite;
+  .form-control{
+    background: none;
+    font-family: $fontLight;
+    font-size: 1em;
+  }
+}

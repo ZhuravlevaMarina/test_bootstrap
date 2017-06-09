@@ -1,24 +1,47 @@
-%icon{
+%iconService{
   font-family: 'icomoon';
-  color: $colorMain;
-  font-size: 2em;
+  color: $colorWhite;
+  line-height: 100px;
+  top: 30%;
+  left: 30%;
+  z-index: 1;
+}
+.webdesign,.graphdesign,.photography,.developing{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: $colorMain;
+  position: relative;
+  margin: 0 auto;
+    &:hover{
+      background-color: $colorWhite;
+      border: 1px solid $colorBlack;
+      transition: 0.5s;
+      &::before{
+        color: $colorMain;
+      }
+    }
 }
 .webdesign:before{
-  @extend %icon;
+  @extend %iconService;
   content: "\e912";
+  font-size: 2em;
 }
 .graphdesign:before{
-  @extend %icon;
+  @extend %iconService;
   content: "\e911";
+  font-size: 4em;
 }
 .photography:before{
-  @extend %icon;
+  @extend %iconService;
   content: "\e910";
+  font-size: 2.7em;
 }
 .developing:before{
-  @extend %icon;
+  @extend %iconService;
   content: "\e90f";
+  font-size: 3em;
 }
 .headline{
-  margin: 25px;
+  margin: 25px 0;
 }

@@ -1,65 +1,61 @@
-.first_block {
-    /*background: url(/public/images/bg_header.png)no-repeat center top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-*/
-  #bg{
-    z-index: -1;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-  }
-    .header {
-      background: url(/public/images/bg_headerNav.png);
-      margin: 0 auto;
-      .header-nav {
-        max-width: 1167px;
-        margin: 0 auto;
-        .dropdown-menu-item {
-          font-family: $fontBold;
-          font-size: 0.875em;
-          color: $colorWhite;
-          &:hover {
-            color: $colorMain;
-            background: none;
-          }
+.header {
+  background: url(/public/images/bg_headerNav.png);
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  .header-nav {
+    max-width: 1167px;
+    margin: 0 auto;
+    .dropdown-menu-item {
+      font-family: $fontBold;
+      font-size: 0.875em;
+      color: $colorWhite;
+      &:hover {
+        color: $colorMain;
+        background: none;
+      }
 
-          &:after {
-            content: '';
-            position: absolute;
-            top: 45%;
-            right: -5px;
-            background-image: url(/public/images/separator_nav.png);
-            width: 5px;
-            height: 5px;
-          }
-        }
-        .active {
-          color: $colorMain;
-        }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 45%;
+        right: -5px;
+        background-image: url(/public/images/separator_nav.png);
+        width: 5px;
+        height: 5px;
       }
     }
+    .active {
+      color: $colorMain;
+    }
+  }
 }
-    .tag {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-      height: 50%;
+#top-block {
+  position: relative;
+  .bg{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .top-info{
+    position: absolute;
+    top: 15%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    .text-block{
       background: url(/public/images/bg_Tag.png);
-
-      .tag-block{
+      width: 100%;
+      .heading{
         max-width: 690px;
+        padding: 30px 0;
         margin: 66px auto 63px;
         color: $colorWhite;
       }
     }
-    h1 {
-      font-family: $fontBold;
-      font-size: 4em;
-    }
-
+  }
+}
