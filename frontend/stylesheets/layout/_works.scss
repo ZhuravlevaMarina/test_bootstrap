@@ -1,0 +1,25 @@
+.portfolio {
+  max-width: 670px;
+  margin: 63px auto 65px;
+  .portfolio-item {
+    font-family: $fontRegular;
+    font-size: 1em;
+    padding: 0 24px;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 46%;
+      right: 0;
+      background-image: url(/public/images/separator_nav.png);
+      width: 5px;
+      height: 5px;
+    }
+    &:hover {
+      color: $colorMain;
+    }
+  }
+  .active{
+    color: $colorMain;;
+  }
+
+}

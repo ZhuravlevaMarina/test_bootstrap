@@ -1,5 +1,9 @@
 footer {
   background: $colorDark;
+  color: $colorWhite;
+  .yellowText{
+    color: $colorMain;
+  }
   %social_icon {
     font-family: 'icomoon';
     color: $colorWhite;
@@ -8,8 +12,16 @@ footer {
     @extend %social_icon;
     content: "\e903";
   }
+  .dribble:before{
+    @extend %social_icon;
+    content: "\e902";
+  }
   .tw:before {
     @extend %social_icon;
     content: "\e901";
+  }
+  .google:before{
+    @extend %social_icon;
+    content: "\e900";
   }
 }

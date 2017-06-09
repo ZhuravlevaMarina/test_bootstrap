@@ -5,9 +5,14 @@ h2{
 h3{
   font-family: $fontRegular;
   font-size: 1em;
+  margin-bottom: 25px;
+}
+h4{
+  font-family: $fontRegular;
+  font-size: 1.5625em;
 }
 .line_yellow{
-  background: url(/public/images/line_yellow.png) repeat-x;
+  background: url(/public/images/line_yellow.png) repeat;
   width: 170px;
   height: 3px;
   margin: 24px auto;
@@ -19,12 +24,18 @@ h3{
 .content{
   font-family: $fontLight;
   font-size: 1em;
-  line-height: 1.5625em;
+  line-height: 1.25em;
 }
 .caption{
   font-family: $fontLight;
   font-size: 1em;
+  line-height: 1.5625em;
 }
 .white{
   color: $colorWhite;
+}
+.container {
+  max-width: 1167px;
+  margin: 0 auto;
+  padding: 60px 0 30px;
 }

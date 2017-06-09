@@ -3,8 +3,14 @@
   h2{
     color: $colorMain;
   }
+  .caption{
+    margin: 27px 0 63px;
+  }
   .content {
     line-height: 1.25em;
+  }
+  .block-next{
+    margin-top: 20px;
   }
   %icon{
     font-family: 'icomoon';

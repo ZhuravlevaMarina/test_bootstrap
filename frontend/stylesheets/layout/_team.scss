@@ -1,9 +1,22 @@
 #team{
   background-color: $colorGrey;
-  .name{
-    color: $colorMain;
-    font-family: $fontRegular;
-    font-size: 1.25em;
+  .thumbnail {
+    width: 270px;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid $colorLightGrey;
+    border-radius: 0;
+    .name {
+      color: $colorMain;
+      font-family: $fontRegular;
+      font-size: 1.25em;
+      margin-top: 17px;
+    }
+    .job {
+      font-family: $fontRegular;
+      font-size: 1em;
+      margin-bottom: 17px;
+    }
   }
   .personal-box{
     background-color: $colorBlack;

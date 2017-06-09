@@ -1,8 +1,10 @@
 .skills{
   background-color: $colorDarkGrey;
   .thumbnail {
-  background: none;
+    background: none;
     border: none;
+    max-width: 190px;
+    max-height: 225px;
     img {
       max-width: 144px;
     }

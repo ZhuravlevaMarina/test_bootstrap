@@ -1,0 +1,20 @@
+#carousel-generic{
+  background-color: $colorDarkGrey;
+  color: $colorWhite;
+  .carousel-inner {
+    padding-bottom: 25px;
+    .carousel-text {
+      font-family: $fontRegular;
+      font-size: 1.25em;
+    }
+  }
+  .carousel-indicators .active{
+    color: $colorMain;
+  }
+  .carousel-indicators li{
+    width: 5px;
+    height: 5px;
+    background-color: $colorWhite;;
+    border-radius: 0;
+  }
+}
