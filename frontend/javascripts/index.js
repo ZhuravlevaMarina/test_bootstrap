@@ -13,7 +13,7 @@ define(["jquery", "bootstrap", "domReady"], function($) {
             this.teamTabs();
         },
         teamTabs: function () {
-            $(window).on('load', function(){
+            $(document).ready(function(){
                 initTeamTabs('#team');
             });
         }

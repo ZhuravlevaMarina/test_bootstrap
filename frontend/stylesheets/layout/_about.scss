@@ -89,5 +89,8 @@
     @include mq-small-down{
       margin-bottom: 30px;
     }
+    a:hover{
+      text-decoration: none;
+    }
   }
 }
