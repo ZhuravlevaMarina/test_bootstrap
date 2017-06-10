@@ -5,6 +5,9 @@
   }
   .caption{
     margin: 27px 0 63px;
+    @include mq-small-down{
+      margin: 27px 0 20px;
+    }
   }
   .content {
     line-height: 1.25em;
@@ -17,7 +20,40 @@
     color: $colorMain;
     font-size: 2em;
   }
-  .analyse:before{
+  .analyse,
+  .preparing,
+  .work,
+  .finalyse,
+  .testing,
+  .deliver{
+    margin: 0 auto;
+    height: 32px;
+    width: 100px;
+    transition: all .3s ease-out;
+    transform: scale(1);
+    -webkit-transition: all .3s ease-out;
+    -webkit-transform: scale(1);
+    -ms-transition: all .3s ease-out;
+    -ms-transform: scale(1);
+    -moz-transition: all .3s ease-out;
+    -moz-transform: scale(1);
+  }
+  .analyse:hover,
+  .preparing:hover,
+  .work:hover,
+  .finalyse:hover,
+  .testing:hover,
+  .deliver:hover{
+    transition: all .3s ease-in;
+    transform: scale(1.75);
+    -webkit-transition: all .3s ease-in;
+    -webkit-transform: scale(1.75);
+    -ms-transition: all .3s ease-in;
+    -ms-transform: scale(1.75);
+    -moz-transition: all .3s ease-in;
+    -moz-transform: scale(1.75);
+  }
+  .analyse:before {
     @extend %icon;
     content: "\e90e";
   }

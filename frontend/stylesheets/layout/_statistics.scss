@@ -1,5 +1,10 @@
 #statistics{
   background-color: $colorDarkGrey;
+  .row{
+    .caption{
+      margin: 27px 0 63px;
+    }
+  }
   .box-information{
     width: 270px;
     height: 142px;

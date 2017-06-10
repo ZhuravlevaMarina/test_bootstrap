@@ -1,5 +1,8 @@
 #team{
   background-color: $colorGrey;
+  .caption {
+    margin: 27px 0 63px;
+  }
   .thumbnail {
     width: 270px;
     padding: 0;
@@ -23,25 +26,47 @@
     color: $colorWhite;
     display: block;
     width: 100%;
+    .name{
+      color: $colorMain;
+    }
     .personal-text {
       max-width: 774px;
       padding: 68px 15px 40px;
       margin: 0 auto;
+      .content{
+        margin: 25px 0 30px;
+      }
       %social_icon {
         font-family: 'icomoon';
         color: $colorWhite;
       }
-      .fb:before {
+      a.fb:hover, a.tw:hover{
+        text-decoration: none;
+      }
+      .fb:before{
         @extend %social_icon;
         content: "\e903";
         border: 1px solid $colorWhite;
         padding: 5px;
+        margin-right: 20px;
+      }
+      .fb:hover{
+        &::before {
+          color: $colorMain;
+          border: 1px solid $colorMain;
+        }
       }
       .tw:before {
         @extend %social_icon;
         content: "\e901";
         border: 1px solid $colorWhite;
         padding: 5px;
+      }
+      .tw:hover{
+        &::before {
+          color: $colorMain;
+          border: 1px solid $colorMain;
+        }
       }
     }
   }

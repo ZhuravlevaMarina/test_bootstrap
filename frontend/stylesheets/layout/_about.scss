@@ -1,5 +1,7 @@
 #about {
-
+  .text-left{
+    margin-top: 20px;
+  }
   %pictures {
     font-family: 'icomoon';
     font-size: 2em;
@@ -55,5 +57,8 @@
   }
   .media {
     margin-bottom: 60px;
+    @include mq-small-down{
+      margin-bottom: 30px;
+    }
   }
 }

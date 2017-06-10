@@ -16,9 +16,12 @@
     &:hover{
       background-color: $colorWhite;
       border: 1px solid $colorBlack;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -o-transition: 0.5s;
       transition: 0.5s;
       &::before{
-        color: $colorMain;
+          color: $colorMain;
       }
     }
 }
