@@ -1,0 +1,25 @@
+@mixin mq-small-down{
+  @media (max-width: $screen-small){
+    @content;
+  }
+}
+/* Small devices (tablets, 768px) */
+@mixin mq-small{
+  @media (min-width: $screen-small) and (max-width: $screen-medium - 1px) {
+    @content;
+  }
+}
+
+/* Medium devices (desktops, 992px) */
+@mixin mq-medium {
+  @media (min-width: $screen-medium) and (max-width: $screen-large - 1px){
+    @content;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@mixin mq-large{
+  @media (min-width: $screen-large) {
+    @content;
+  }
+}

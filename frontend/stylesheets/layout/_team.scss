@@ -18,24 +18,31 @@
       margin-bottom: 17px;
     }
   }
-  .personal-box{
+  .personal-box {
     background-color: $colorBlack;
     color: $colorWhite;
-    %social_icon{
-      font-family: 'icomoon';
-      color: $colorWhite;
-    }
-    .fb:before{
-      @extend %social_icon;
-      content: "\e903";
-      border: 1px solid $colorWhite;
-      padding: 5px;
-    }
-    .tw:before{
-      @extend %social_icon;
-      content: "\e901";
-      border: 1px solid $colorWhite;
-      padding: 5px;
+    display: block;
+    width: 100%;
+    .personal-text {
+      max-width: 774px;
+      padding: 68px 15px 40px;
+      margin: 0 auto;
+      %social_icon {
+        font-family: 'icomoon';
+        color: $colorWhite;
+      }
+      .fb:before {
+        @extend %social_icon;
+        content: "\e903";
+        border: 1px solid $colorWhite;
+        padding: 5px;
+      }
+      .tw:before {
+        @extend %social_icon;
+        content: "\e901";
+        border: 1px solid $colorWhite;
+        padding: 5px;
+      }
     }
   }
 }

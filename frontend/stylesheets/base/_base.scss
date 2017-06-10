@@ -1,6 +1,12 @@
 h1{
   font-family: $fontBold;
   font-size: 4em;
+  line-height: 1.2em;
+  padding-bottom: 48px;
+    @include mq-small-down{
+      font-size: 1.3em;
+      padding-bottom: 10px;
+    }
 }
 h2{
   font-family: $fontBold;
@@ -42,4 +48,7 @@ h4{
   max-width: 1167px;
   margin: 0 auto;
   padding: 60px 0 30px;
+  @include mq-small-down{
+    margin: 0 30px;
+  }
 }

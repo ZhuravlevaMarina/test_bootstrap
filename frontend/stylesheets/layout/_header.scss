@@ -9,7 +9,33 @@
   .header-nav {
     max-width: 1167px;
     margin: 0 auto;
-    .dropdown-menu-item {
+    #dropdownMenu1{
+      background-color: $colorMain;
+      border: none;
+      color: #0f0f0f;
+      padding: 5px 10px;
+      margin: 25px 0 0 120px;
+      .glyphicon-menu-hamburger{
+      color: #0f0f0f;
+      }
+    }
+    .dropdown-menu{
+      background-color: $colorDarkGrey;
+      .divider{
+        background-color: $colorMain;
+      }
+      .dropdown-menu-item{
+        color: $colorMain;
+      }
+    }
+    .btn-menu{
+      border: none;
+      color: $colorMain;
+      .glyphicon-menu-hamburger{
+        color: $colorMain;
+      }
+    }
+    .menu-item {
       font-family: $fontBold;
       font-size: 0.875em;
       color: $colorWhite;
@@ -17,7 +43,6 @@
         color: $colorMain;
         background: none;
       }
-
       &:after {
         content: '';
         position: absolute;
@@ -52,9 +77,14 @@
       width: 100%;
       .heading{
         max-width: 690px;
-        padding: 30px 0;
+        padding: 60px 0 65px;
         margin: 66px auto 63px;
         color: $colorWhite;
+        @include mq-small-down{
+          padding: 10px 0;
+          margin: 39px auto;
+          max-width: 300px;
+        }
       }
     }
   }

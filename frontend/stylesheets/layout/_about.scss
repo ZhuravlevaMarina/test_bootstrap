@@ -1,56 +1,59 @@
-%pictures{
-  font-family: 'icomoon';
-  font-size: 2em;
-  color: $colorWhite;
-  z-index: 1;
-  position: absolute;
-  top: 25%;
-  left: 28%;
-}
-.time {
-  position: relative;
-  width: 70px;
-  height: 70px;
-  background-color: $colorMain;
-  border-radius: 50%;
-  &:before {
-    @extend %pictures;
-    content: "\e90a";
+#about {
+
+  %pictures {
+    font-family: 'icomoon';
+    font-size: 2em;
+    color: $colorWhite;
+    z-index: 1;
+    position: absolute;
+    top: 25%;
+    left: 28%;
   }
-}
-.support {
-  position: relative;
-  width: 70px;
-  height: 70px;
-  background-color: $colorMain;
-  border-radius: 50%;
-  &:before {
-    @extend %pictures;
-    content: "\e908";
+  .time {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: $colorMain;
+    border-radius: 50%;
+    &:before {
+      @extend %pictures;
+      content: "\e90a";
+    }
   }
-}
-.experience {
-  position: relative;
-  width: 70px;
-  height: 70px;
-  background-color: $colorMain;
-  border-radius: 50%;
-  &:before {
-    @extend %pictures;
-    content: "\e909";
+  .support {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: $colorMain;
+    border-radius: 50%;
+    &:before {
+      @extend %pictures;
+      content: "\e908";
+    }
   }
-}
-.team {
-  position: relative;
-  width: 70px;
-  height: 70px;
-  background-color: $colorMain;
-  border-radius: 50%;
-  &:before {
-    @extend %pictures;
-    content: "\e907";
+  .experience {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: $colorMain;
+    border-radius: 50%;
+    &:before {
+      @extend %pictures;
+      content: "\e909";
+    }
   }
-}
-.media{
-  margin-bottom: 60px;
+  .team {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: $colorMain;
+    border-radius: 50%;
+    &:before {
+      @extend %pictures;
+      content: "\e907";
+    }
+  }
+  .media {
+    margin-bottom: 60px;
+  }
 }
