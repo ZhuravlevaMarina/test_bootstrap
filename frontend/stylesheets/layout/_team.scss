@@ -34,6 +34,8 @@
       display: none;
       .name {
         color: $colorMain;
+        font-family: $fontRegular;
+        font-size: 1.25em;
       }
       .personal-text {
         max-width: 774px;

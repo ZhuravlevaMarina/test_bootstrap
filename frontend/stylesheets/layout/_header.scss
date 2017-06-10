@@ -6,55 +6,64 @@
   left: 0;
   width: 100%;
   z-index: 10;
-  .header-nav {
-    max-width: 1167px;
-    margin: 0 auto;
-    #dropdownMenu1{
-      background-color: $colorMain;
-      border: none;
-      color: #0f0f0f;
-      padding: 5px 10px;
-      margin: 25px 0 0 120px;
-      .glyphicon-menu-hamburger{
-      color: #0f0f0f;
-      }
+  .logo{
+    padding-top: 17px;
+  }
+  .menu {
+    @include mq-large {
+      padding: 44px 0 41px 190px;
     }
-    .dropdown-menu{
-      background-color: $colorDarkGrey;
-      .divider{
+    .header-nav {
+      max-width: 1167px;
+      margin: 0 auto;
+      #dropdownMenu1 {
         background-color: $colorMain;
+        border: none;
+        color: #0f0f0f;
+        padding: 5px 10px;
+        margin: 25px 0 0 120px;
+        .glyphicon-menu-hamburger {
+          color: #0f0f0f;
+        }
       }
-      .dropdown-menu-item{
+      .dropdown-menu {
+        background-color: $colorDarkGrey;
+        .divider {
+          background-color: $colorMain;
+        }
+        .dropdown-menu-item {
+          color: $colorMain;
+        }
+      }
+      .btn-menu {
+        border: none;
+        color: $colorMain;
+        .glyphicon-menu-hamburger {
+          color: $colorMain;
+        }
+      }
+      .menu-item {
+        font-family: $fontBold;
+        font-size: 0.875em;
+        color: $colorWhite;
+        &:hover {
+          color: $colorMain;
+          background: none;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          top: 45%;
+          right: -5px;
+          background-image: url(/public/images/separator_nav.png);
+          width: 5px;
+          height: 5px;
+        }
+
+      }
+      .active {
         color: $colorMain;
       }
-    }
-    .btn-menu{
-      border: none;
-      color: $colorMain;
-      .glyphicon-menu-hamburger{
-        color: $colorMain;
-      }
-    }
-    .menu-item {
-      font-family: $fontBold;
-      font-size: 0.875em;
-      color: $colorWhite;
-      &:hover {
-        color: $colorMain;
-        background: none;
-      }
-      &:after {
-        content: '';
-        position: absolute;
-        top: 45%;
-        right: -5px;
-        background-image: url(/public/images/separator_nav.png);
-        width: 5px;
-        height: 5px;
-      }
-    }
-    .active {
-      color: $colorMain;
     }
   }
 }

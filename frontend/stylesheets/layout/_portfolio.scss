@@ -24,7 +24,7 @@
     background-color: $colorMain;
   }
   .image-container:hover .overlay {
-    opacity: 0.7;
+    opacity: 0.8;
   }
   .text {
     color: white;
@@ -34,6 +34,17 @@
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    width: 155px;
+    text-transform: uppercase;
+    .text-header{
+      font-family: $fontBold;
+      font-size: 1.25em;
+      padding-bottom: 17px;
+    }
+    p{
+      font-family: $fontRegular;
+      font-size: 1em;
+    }
   }
   .caption{
     margin: 27px 0 63px;
