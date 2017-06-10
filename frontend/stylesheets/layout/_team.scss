@@ -1,5 +1,8 @@
 #team{
   background-color: $colorGrey;
+  a.team-member:hover{
+    text-decoration: none;
+  }
   .caption {
     margin: 27px 0 63px;
   }
@@ -21,51 +24,63 @@
       margin-bottom: 17px;
     }
   }
-  .personal-box {
-    background-color: $colorBlack;
-    color: $colorWhite;
-    display: block;
-    width: 100%;
-    .name{
-      color: $colorMain;
-    }
-    .personal-text {
-      max-width: 774px;
-      padding: 68px 15px 40px;
-      margin: 0 auto;
-      .content{
-        margin: 25px 0 30px;
+  .container-boxes {
+    .personal-box {
+      background-color: $colorBlack;
+      color: $colorWhite;
+      width: 100%;
+      display: none;
+      .name {
+        color: $colorMain;
       }
-      %social_icon {
-        font-family: 'icomoon';
-        color: $colorWhite;
-      }
-      a.fb:hover, a.tw:hover{
-        text-decoration: none;
-      }
-      .fb:before{
-        @extend %social_icon;
-        content: "\e903";
-        border: 1px solid $colorWhite;
-        padding: 5px;
-        margin-right: 20px;
-      }
-      .fb:hover{
-        &::before {
-          color: $colorMain;
-          border: 1px solid $colorMain;
+      .personal-text {
+        max-width: 774px;
+        padding: 68px 15px 40px;
+        margin: 0 auto;
+        position: relative;
+        .content {
+          margin: 25px 0 30px;
         }
-      }
-      .tw:before {
-        @extend %social_icon;
-        content: "\e901";
-        border: 1px solid $colorWhite;
-        padding: 5px;
-      }
-      .tw:hover{
-        &::before {
-          color: $colorMain;
-          border: 1px solid $colorMain;
+        .close{
+          position: absolute;
+          content: '';
+          background: url(/public/images/close.png) no-repeat;
+          width: 15px;
+          height: 15px;
+          top: 60px;
+          right: 20px;
+        }
+        %social_icon {
+          font-family: 'icomoon';
+          color: $colorWhite;
+        }
+        a.fb:hover, a.tw:hover {
+          text-decoration: none;
+        }
+        .fb:before {
+          @extend %social_icon;
+          content: "\e903";
+          border: 1px solid $colorWhite;
+          padding: 5px;
+          margin-right: 20px;
+        }
+        .fb:hover {
+          &::before {
+            color: $colorMain;
+            border: 1px solid $colorMain;
+          }
+        }
+        .tw:before {
+          @extend %social_icon;
+          content: "\e901";
+          border: 1px solid $colorWhite;
+          padding: 5px;
+        }
+        .tw:hover {
+          &::before {
+            color: $colorMain;
+            border: 1px solid $colorMain;
+          }
         }
       }
     }

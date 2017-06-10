@@ -8,34 +8,52 @@ requirejs.config({
 define(["jquery", "bootstrap", "domReady"], function($) {
     "use strict";
 
-    /*var Homepage = {
+    var Homepage = {
         init: function () {
-            this.carouselHeight();
+            this.teamTabs();
         },
-        carouselHeight: function () {
+        teamTabs: function () {
             $(window).on('load', function(){
-               //setCarouselHeight('#carousel-example');
+                initTeamTabs('#team');
             });
 
-            function setCarouselHeight(id){
-                var slideHeight = [];
-                $(id+' .item').each(function()
-                {
-                    // add all slide heights to an array
-                    slideHeight.push($(this).height());
+            function initTeamTabs(id) {
+                var initialActiveElement = $(id).find('a.team-member.active');
+                handleToggle(initialActiveElement);
+
+                // Handle click
+                $(id).find('a.team-member').each(function(){
+                    $(this).on('click', function(e){
+                        e.preventDefault();
+                        handleToggle($(this));
+                    })
                 });
 
-                // find the tallest item
-                var max = Math.max.apply(null, slideHeight);
-
-                // set the slide's height
-                $(id+' .carousel-content').each(function()
-                {
-                    $(this).css('height',max+'px');
+                // Handle Close
+                $(id).find('a.close').each(function(){
+                    $(this).on('click', function(e){
+                        e.preventDefault();
+                        $(id).find('div.personal-box.active').hide(250).removeClass('active');
+                        $(id).find('a.team-member').each(function(){
+                            $(this).removeClass('active');
+                        });
+                    })
                 });
+
+                // Toggle function
+                function handleToggle(element){
+                    var itemId = element.attr('data-id');
+                    $(id).find('div.personal-box.active').hide(250).removeClass('active');
+                    $(id).find('a.team-member').each(function(){
+                        $(this).removeClass('active');
+                    });
+                    element.addClass('active');
+                    $(id).find('#'+itemId).addClass('active').toggle(500);
+                }
             }
         }
     };
-    Homepage.init();*/
+
+    Homepage.init();
 
 });
