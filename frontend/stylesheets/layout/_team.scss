@@ -3,6 +3,7 @@
   a.team-member:hover{
     text-decoration: none;
   }
+
   .caption {
     margin: 27px 0 63px;
   }
@@ -22,6 +23,7 @@
       font-family: $fontRegular;
       font-size: 1em;
       margin-bottom: 17px;
+      color: $colorFontGrey;
     }
   }
   .container-boxes {
@@ -38,8 +40,10 @@
         padding: 68px 15px 40px;
         margin: 0 auto;
         position: relative;
+        color: $colorWhite;
         .content {
           margin: 25px 0 30px;
+          color: $colorWhite;
         }
         .close{
           position: absolute;

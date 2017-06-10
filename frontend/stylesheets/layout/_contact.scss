@@ -1,17 +1,45 @@
-%icon{
-  font-family: 'icomoon';
-  color: $colorMain;
-  font-size: 2em;
-}
-.address:before{
-  @extend %icon;
-  content: "\e906";
-}
-.mail:before{
-  @extend %icon;
-  content: "\e905";
-}
-.phone:before{
-  @extend %icon;
-  content: "\e904";
+#contact {
+
+  .info{
+    font-family: $fontLight;
+    font-size: 1.25em;
+  }
+  %icon {
+    font-family: 'icomoon';
+    color: $colorMain;
+    font-size: 2em;
+  }
+  %hoverAnimation {
+    background-color: $colorWhite;
+    transition: all .3s ease-in;
+    transform: scale(1.75) rotate(360deg);
+    -webkit-transition: all .3s ease-in;
+    -webkit-transform: scale(1.75) rotate(360deg);
+    -ms-transition: all .3s ease-in;
+    -ms-transform: scale(1.75) rotate(360deg);
+    -moz-transition: all .3s ease-in;
+    -moz-transform: scale(1.75) rotate(360deg);
+    &::before {
+      color: $colorMain;
+    }
+  }
+  .address:before {
+    @extend %icon;
+    content: "\e906";
+  }
+  .address, .mail, .phone {
+    width: 40px;
+    margin: 0 auto;
+    &:hover {
+      @extend %hoverAnimation
+    }
+  }
+  .mail:before {
+    @extend %icon;
+    content: "\e905";
+  }
+  .phone:before {
+    @extend %icon;
+    content: "\e904";
+  }
 }

@@ -5,12 +5,14 @@
   }
   .caption{
     margin: 27px 0 63px;
+    color: $colorWhite;
     @include mq-small-down{
       margin: 27px 0 20px;
     }
   }
   .content {
     line-height: 1.25em;
+    color: $colorWhite;
   }
   .block-next{
     margin-top: 20px;

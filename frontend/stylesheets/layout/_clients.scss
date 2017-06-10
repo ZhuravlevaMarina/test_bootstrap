@@ -1,20 +1,42 @@
-#carousel-generic{
-  background-color: $colorDarkGrey;
-  color: $colorWhite;
-  .carousel-inner {
-    padding-bottom: 25px;
-    .carousel-text {
-      font-family: $fontRegular;
-      font-size: 1.25em;
+#clients {
+  .logotype{
+    display: block;
+    text-align: center;
+    height: 55px;
+    position: relative;
+    img{
+      max-height: 100%;
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
     }
   }
-  .carousel-indicators .active{
-    color: $colorMain;
-  }
-  .carousel-indicators li{
-    width: 5px;
-    height: 5px;
-    background-color: $colorWhite;;
-    border-radius: 0;
+  #carousel-generic {
+    background-color: $colorDarkGrey;
+    color: $colorWhite;
+    .carousel-inner {
+      padding-bottom: 25px;
+      .carousel-text {
+        font-family: $fontRegular;
+        font-size: 1.25em;
+      }
+    }
+    .carousel-indicators .active {
+      background-color: $colorMain;
+      border: none;
+    }
+    .carousel-indicators li {
+      width: 5px;
+      height: 5px;
+      background-color: $colorWhite;;
+      border-radius: 0;
+      border: none;
+    }
   }
 }

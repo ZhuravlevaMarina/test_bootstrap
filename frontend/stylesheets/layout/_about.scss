@@ -11,6 +11,22 @@
     top: 25%;
     left: 28%;
   }
+  %hoverAnimation{
+    background-color: $colorWhite;
+    border: 2px solid $colorMain;
+    transition: all .3s ease-in;
+    transform: rotate(360deg);
+    -webkit-transition: all .3s ease;
+    -webkit-transform: rotate(360deg);
+    -ms-transition: all .3s ease;
+    -ms-transform: rotate(360deg);
+    -moz-transition: all .3s ease;
+    -moz-transform: rotate(360deg);
+    &::before{
+      color: $colorMain;
+    }
+  }
+
   .time {
     position: relative;
     width: 70px;
@@ -21,7 +37,11 @@
       @extend %pictures;
       content: "\e90a";
     }
+    &:hover{
+      @extend %hoverAnimation;
+    }
   }
+
   .support {
     position: relative;
     width: 70px;
@@ -31,6 +51,9 @@
     &:before {
       @extend %pictures;
       content: "\e908";
+    }
+    &:hover{
+      @extend %hoverAnimation;
     }
   }
   .experience {
@@ -43,6 +66,9 @@
       @extend %pictures;
       content: "\e909";
     }
+    &:hover{
+      @extend %hoverAnimation;
+    }
   }
   .team {
     position: relative;
@@ -53,6 +79,9 @@
     &:before {
       @extend %pictures;
       content: "\e907";
+    }
+    &:hover{
+      @extend %hoverAnimation;
     }
   }
   .media {

@@ -3,6 +3,7 @@
   .row{
     .caption{
       margin: 27px 0 63px;
+      color: $colorWhite;
     }
   }
   .box-information{
@@ -10,7 +11,7 @@
     height: 142px;
     border: 1px solid $colorMain;
     padding-top: 35px;
-    margin: 10px 15px;
+    margin: 15px auto;
     .number{
       color: $colorWhite;
       font-family: $fontBold;
