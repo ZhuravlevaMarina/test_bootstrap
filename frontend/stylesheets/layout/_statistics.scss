@@ -1,24 +1,21 @@
-#statistics{
-  background-color: $colorDarkGrey;
-  .row{
-    .caption{
-      margin: 27px 0 63px;
-      color: $colorWhite;
-    }
+#statistics {
+  .caption {
+    margin: 27px 0 63px;
+    color: $colorWhite;
   }
-  .box-information{
+  .box-information {
     width: 270px;
     height: 142px;
     border: 1px solid $colorMain;
     padding-top: 35px;
     margin: 15px auto;
-    .number{
+    .number {
       color: $colorWhite;
       font-family: $fontBold;
       font-size: 2.5em;
       margin-bottom: 17px;
     }
-    .text{
+    .text {
       color: $colorMain;
       font-family: $fontRegular;
       font-size: 1em;

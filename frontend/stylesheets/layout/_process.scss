@@ -1,5 +1,4 @@
 #process {
-  background-color: $colorBlack;
   h2{
     color: $colorMain;
   }
@@ -14,7 +13,7 @@
     line-height: 1.25em;
     color: $colorWhite;
   }
-  .block-next{
+  .process-block{
     margin-top: 20px;
   }
   %icon{
@@ -31,29 +30,6 @@
     margin: 0 auto;
     height: 32px;
     width: 100px;
-    transition: all .3s ease-out;
-    transform: scale(1);
-    -webkit-transition: all .3s ease-out;
-    -webkit-transform: scale(1);
-    -ms-transition: all .3s ease-out;
-    -ms-transform: scale(1);
-    -moz-transition: all .3s ease-out;
-    -moz-transform: scale(1);
-  }
-  .analyse:hover,
-  .preparing:hover,
-  .work:hover,
-  .finalyse:hover,
-  .testing:hover,
-  .deliver:hover{
-    transition: all .3s ease-in;
-    transform: scale(1.75);
-    -webkit-transition: all .3s ease-in;
-    -webkit-transform: scale(1.75);
-    -ms-transition: all .3s ease-in;
-    -ms-transform: scale(1.75);
-    -moz-transition: all .3s ease-in;
-    -moz-transform: scale(1.75);
   }
   .analyse:before {
     @extend %icon;

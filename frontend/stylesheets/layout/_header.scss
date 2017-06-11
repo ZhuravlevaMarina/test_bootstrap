@@ -1,5 +1,5 @@
 .header {
-  background: url(/public/images/bg_headerNav.png);
+  background: url(../images/bg_headerNav.png);
   margin: 0 auto;
   position: fixed;
   top: 0;
@@ -55,7 +55,7 @@
           position: absolute;
           top: 45%;
           right: -5px;
-          background-image: url(/public/images/separator_nav.png);
+          background-image: url(../images/separator_nav.png);
           width: 5px;
           height: 5px;
         }
@@ -82,7 +82,7 @@
     text-align: center;
     width: 100%;
     .text-block{
-      background: url(/public/images/bg_Tag.png);
+      background: url(../images/bg_Tag.png);
       width: 100%;
       .heading{
         max-width: 690px;
