@@ -21,10 +21,26 @@
     background-color: $colorDarkGrey;
     color: $colorWhite;
     .carousel-inner {
-      padding-bottom: 25px;
+      .person{
+        margin-bottom: 25px;
+      }
       .carousel-text {
         font-family: $fontRegular;
         font-size: 1.25em;
+        position: relative;
+        margin-bottom: 50px;
+        &:after {
+          content: '';
+          position: absolute;
+          right: 0;
+          bottom: -25px;
+          left: 0;
+          width: 170px;
+          height: 3px;
+          margin-right: auto;
+          margin-left: auto;
+          background: $colorMain;
+        }
       }
     }
     .carousel-indicators .active {
