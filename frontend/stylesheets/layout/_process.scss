@@ -15,6 +15,9 @@
   }
   .process-block{
     margin-top: 20px;
+    .headline{
+      margin-bottom: 30px;
+    }
   }
   %icon{
     font-family: 'icomoon';
@@ -27,7 +30,7 @@
   .finalyse,
   .testing,
   .deliver{
-    margin: 0 auto;
+    margin: 0 auto 27px;
     height: 32px;
     width: 100px;
   }

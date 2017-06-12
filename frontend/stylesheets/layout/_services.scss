@@ -1,50 +1,54 @@
-%iconService{
-  font-family: 'icomoon';
-  color: $colorWhite;
-  line-height: 100px;
-  top: 30%;
-  left: 30%;
-  z-index: 1;
-}
-.webdesign,.graphdesign,.photography,.developing{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: $colorMain;
-  position: relative;
-  margin: 0 auto;
-    &:hover{
+
+.services-block {
+    margin-bottom: 35px;
+  %iconService {
+    font-family: 'icomoon';
+    color: $colorWhite;
+    line-height: 100px;
+    top: 30%;
+    left: 30%;
+    z-index: 1;
+  }
+  .webdesign, .graphdesign, .photography, .developing {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $colorMain;
+    position: relative;
+    margin: 0 auto;
+    &:hover {
       background-color: $colorWhite;
       border: 1px solid $colorBlack;
       -webkit-transition: 0.5s;
       -moz-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s;
-      &::before{
-          color: $colorMain;
+      &::before {
+        color: $colorMain;
       }
     }
-}
-.webdesign:before{
-  @extend %iconService;
-  content: "\e912";
-  font-size: 2em;
-}
-.graphdesign:before{
-  @extend %iconService;
-  content: "\e911";
-  font-size: 4em;
-}
-.photography:before{
-  @extend %iconService;
-  content: "\e910";
-  font-size: 2.7em;
-}
-.developing:before{
-  @extend %iconService;
-  content: "\e90f";
-  font-size: 3em;
-}
-.headline{
-  margin: 25px 0;
+  }
+  .webdesign:before {
+    @extend %iconService;
+    content: "\e912";
+    font-size: 2em;
+  }
+  .graphdesign:before {
+    @extend %iconService;
+    content: "\e911";
+    font-size: 4em;
+  }
+  .photography:before {
+    @extend %iconService;
+    content: "\e910";
+    font-size: 2.7em;
+  }
+  .developing:before {
+    @extend %iconService;
+    content: "\e90f";
+    font-size: 3em;
+  }
+  .headline {
+    margin: 25px 0;
+  }
 }
